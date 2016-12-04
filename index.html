@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='fr' xmlns:og="http://ogp.me/ns#">
+	<head>
+	    <title> Téléchargez CAPEB !</title>
+
+			<meta property="og:title" content="Application CAPEB à télécharger"/>
+			<meta property="og:type" content="article"/>
+			<meta property="og:url" content="http://www.capeb.fr/"/>
+			<meta property="og:image" content="https://i.imgsafe.org/40fb703b54.png"/>
+
+	    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	    <meta name="robots" content="index">
+	    <meta name="robots" content="all">
+	    <meta name="description" content="Application CAPEB à télécharger">
+	    <meta name="keywords" content="CAPEB">
+	    <meta name="author" content="Clara BOUYER">
+	    <meta name="viewport" content="width=device-width">
+			<meta name="apple-itunes-app" content="app-id=971652081"/>
+
+			<link rel="icon" type="image/x-icon" href="dist/images/capeb.ico" />
+			<link id="style_couleur" href="dist/blanc.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id='container'>
+
+			<div class="row">
+				<div class="col-md-2 col-md-offset-9 col-sm-3 col-sm-offset-8 col-xs-6 col-xs-offset-4 selecteur">
+					<label>Choix de la couleur</label>
+					<select class="form-control" onchange=changerCouleur(this.value)>
+						<option id="blanc" value="blanc">Blanc</option>
+						<option id="jaune" value="jaune">Jaune</option>
+						<option id="rose" value="rose">Rose</option>
+						<option id="vert" value="vert">Vert</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<header>
+					<div class="col-md-6 col-sm-6 ">
+						<div class="col-xs-12 col-sm-12 logo">
+							<img src="https://i.imgsafe.org/40fb703b54.png" title="Logo CAPEB" alt="Logo CAPEB, l'artisanat du batiment" />
+	            </br></br>
+	          </div>
+	          <p> Grâce à l'application mobile de la CAPEB, vous serez épaulé, informé en permanence et conseillé dans votre travail de tous les jours.
+							Vous pourrez être informé sur les actualités de la CAPEB de votre département et de vos métiers mais également recevoir des alertes avec les informations
+							les plus importantes.
+							Télécharger l'application pour découvrir les nombreuses autres fonctionnalités de l'application.
+						</p>
+						<div class="row">
+							<div class="dlAppli col-xs-12 col-sm-6 col-md-6">
+								<a href="https://itunes.apple.com/fr/app/capeb-71/id971652081?mt=8" target="blank">
+									<img src="https://i.imgsafe.org/4183f26453.png" alt="Télécharger l'application pour android sur Google Play" title="Lien de téléchargement vers Google Play"/>
+		            </a>
+		          </div>
+		          <div class="dlAppli col-xs-12 col-sm-6 col-md-6">
+		            <a href="https://play.google.com/store/apps/details?id=com.websenso.capeb71" target="blank">
+									<img src="https://i.imgsafe.org/41843efc58.png" alt="Télécharger l'application pour iPhone sur Apple Store" title="Lien de téléchargement vers Apple Store"/>
+		            </a>
+		          </div>
+						</div>
+	        </div>
+	      </header>
+
+	      <div class="imageDroite">
+					<div class="col-xs-12 col-md-6 col-sm-6">
+						<img src="https://i.imgsafe.org/41a313f9a4.png" alt="Exemple de navigation mobile de l'application CAPEB" title="Exemple de navigation mobile de l'application CAPEB" />
+	        </div>
+	      </div>
+	    </div>
+
+	    <div class="row formulaire">
+				<div class="col-xs-12">
+					<h2> Besoin d'une présentation rapide par email ? </h2>
+					</br>
+	        <p> ♡ Avec plaisir, saisissez votre adresse email et vous recevrez immédiatement un très joli email. ♡</p>
+	        </br>
+	        <form  class="form-inline">
+						<div class="form-group">
+	            <input type="email" required placeholder="Email" class="form-control form-control-lg"/>
+						</div>
+	            <input type="submit" value="Recevoir la présentation" class="btn btn-secondary "/>
+	        </form>
+	      </div>
+	    </div>
+
+	    <div class="row reseau">
+				<a href="https://www.facebook.com/capeb.hautespyrenees?ref=br_rs" target="blank">
+					<div class=" col-md-1 col-sm-3 col-md-offset-4 col-xs-6 glyph-icon fi flaticon-social-facebook-circular-button"></div>
+				</a>
+	      <a href="https://twitter.com/capeb_fr?lang=fr" target="blank">
+					<div class="col-md-1 col-sm-3 col-xs-6 glyph-icon fi flaticon-social-twitter-circular-button"></div>
+				</a>
+	      <a href="#" target="blank">
+					<div class="col-md-1 col-sm-3 col-xs-6 glyph-icon fi flaticon-email"></div>
+				</a>
+	      <a href="http://www.capeb.fr/flux-rss/" target="blank">
+					<div class="col-md-1 col-sm-3 col-xs-6 glyph-icon fi flaticon-rss-subscription-circular-button"></div>
+				</a>
+	    </div>
+
+	    <footer class="row">
+				<div class="col-xs-12">
+					<p>♡ <span>MIW</span> © 2015 ♡</p>
+				</div>
+	    </footer>
+
+	  </div>
+	</body>
+
+	<script>
+		function changerCouleur($color){
+			var feuille= document.getElementById('style_couleur');
+			feuille.setAttribute('href','dist/'+$color+'.css');
+		}
+	</script>
+
+</html>
